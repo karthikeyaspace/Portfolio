@@ -1,0 +1,13 @@
+.nopage .container {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.nopage .paths{
+    margin-top: 3rem;
+}
+
+.nopage .paths p {
+    text-decoration: none;
+    padding: 10px 0;
+}
