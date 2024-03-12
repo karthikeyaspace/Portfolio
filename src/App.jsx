@@ -10,6 +10,8 @@ import Projects from './components/Projects/Projects'
 import Blogs from './components/Blogs/Blogs'
 import Resume from './components/Resume/Resume'
 
+import VisibilityIcon from './components/VisibilityIcon.js'
+
 
 function App() {
 
@@ -18,7 +20,7 @@ function App() {
     element: <Root />,
     children: [
       {
-        path:'',
+        path: '',
         element: <Home />
       },
       {
@@ -47,7 +49,8 @@ function App() {
 
   return (
     <>
-    <RouterProvider router={BrowserRouter}/>
+      <VisibilityIcon />
+      <RouterProvider router={BrowserRouter} />
     </>
   )
 }
