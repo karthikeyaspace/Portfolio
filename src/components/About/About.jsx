@@ -69,7 +69,8 @@ export default function About() {
                             username="karthikeyaspace"
                             blockSize={13}
                             blockMargin={5}
-                            color="#c084f5"
+                            errorMessage="Could not load GitHub calendar of karthikeyaspace"
+                            color="blue"
                             fontSize={13}
                             style={{ cursor: 'crosshair' }}
                         />
