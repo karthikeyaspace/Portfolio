@@ -9,7 +9,7 @@ export default function Root() {
         <>
             <Navbar />
             <ScrollToTop/>
-            <div className='mainroot' style={{minHeight: '1450px'}}> 
+            <div className='mainroot' style={{minHeight: '1350px'}}> 
                 <Outlet />
             </div>
             <Footer />
