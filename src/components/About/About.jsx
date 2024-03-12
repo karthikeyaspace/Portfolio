@@ -13,9 +13,9 @@ export default function About() {
                     <div className="left">
                         <h1>About Me</h1>
                         <p>I am <span style={{ fontSize: '1.75rem', fontWeight: 'bold' }}>Karthikeya</span> from Hyderabad, Telangana</p>
-                        <p>I am currently pursuing by 2nd year B-tech in computer science and data science at <i>VNR Vignan Jyothi College of Engineering</i> <a href="https://vnrvjiet.ac.in" target="_blank"><img src={open} alt="" /></a> </p>
-                        <p>I am interested in <i>Web Development, Competitive Programming, Machine Learning</i>.</p>
-                        <p>I love to work as a team</p>
+                        <p>currently studying 2nd year B-tech in Computer Science and Data Science at <i>VNR Vignan Jyothi College of Engineering.</i> <a href="https://vnrvjiet.ac.in" target="_blank"><img src={open} alt="" style={{maxWidth:'15px'}}/></a> </p>
+                        <p>Interested in <i>Web Development, Competitive Programming, Machine Learning</i>.</p>
+                        <p>Enjoys collaborative work and team environments.</p>
                         <br />
                         <h4>Apart from tech stuff</h4>
                         <p>I like to play Basketball, watch movies and series</p>
