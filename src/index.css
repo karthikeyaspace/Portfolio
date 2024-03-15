@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
 
 :root{
-    --primary: rgb(255, 255, 255);
-    --secondary: rgb(0, 0, 0);
+    --primary: white;
+    --secondary: black;
 }
 
 .primary{
