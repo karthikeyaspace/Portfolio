@@ -6,7 +6,7 @@ const data = {
         {
             "name":"FOCUS",
             "image": focus,
-            "description":"Focus is python based application that helps you be focused in task by blocking the distracting websites for a desired period of time. It automatically closes an app when opened by the user and also blocks desired websties to improve concentraton and productivity. It uses the hosts file to block the distracting websites. focus can also be used for parental control to block unwanted websites and apps.",
+            "description":"Focus is a Python app enhancing focus by blocking distracting websites, automatically closing specified apps, and utilizing the hosts file. Ideal for boosting productivity and parental control by limiting access to unwanted sites and apps.",
             "github": "https://github.com/karthikeyaspace/FOCUS.git",
             "techStack": ["Python, ", "Tkinter"]
         } ,
@@ -19,7 +19,7 @@ const data = {
         },  
         {
             "name":"SurfSafe",
-            "description": "SurfSafe is a python based application that helps you be safe while surfing the internet. It automatically blocks the malicious websites to keep you safe from phishing attacks and other cyber threats. It uses the hosts file to block the malicious websites. It checks the url of the website whether it has https or not to block a website. SurfSafe can also be used for parental control to block unwanted websites.",
+            "description": "SurfSafe, a Python app, enhances internet safety by automatically blocking malicious websites, safeguarding against phishing and cyber threats. It leverages the hosts file and HTTPS verification to ensure protection, doubling as parental control for blocking undesirable sites.",
             "github": "https://github.com/karthikeyaspace/SurfSafe.git",
             "image": surfsafe,
             "techStack": ["Python, ","Tkinter, ", "Hosts File"]

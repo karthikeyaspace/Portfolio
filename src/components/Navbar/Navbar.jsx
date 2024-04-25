@@ -10,9 +10,9 @@ export default function Navbar() {
     const handleClick = ()=> setMenu(!menu)
 
     return (
-        <div className="header">
-            <nav className='container'>
-                <span><a href="/"><img src={logo} /></a></span>
+        <div className="header h-16 w-full bg-white  fixed top-0 z-10 border-b-2 border-black">
+            <nav className='container flex flex-row justify-between items-center h-full px-12 py-0'>
+                <span><a href="/"><img src={logo} className="w-12" /></a></span>
                 <ul className={menu ? 'nav-menu active':'nav-menu'}>
                     <li className='nav-item'>
                         <Link to="/" onClick={handleClick} className='nav-link secondary'>

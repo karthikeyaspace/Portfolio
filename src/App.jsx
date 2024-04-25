@@ -1,15 +1,14 @@
-import React from 'react'
+import React, {lazy, Suspense} from 'react'
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 
 //files 
 import Root from './components/Root'
-import Home from './components/Home/Home'
+import Home from './components/Home'
 import About from './components/About/About'
-import NotFound from './components/NotFound/NotFound'
+import NotFound from './components/NotFound'
 import Projects from './components/Projects/Projects'
-import Blogs from './components/Blogs/Blogs'
-import Resume from './components/Resume/Resume'
-
+import Blogs from './components/Blogs'
+import Resume from './components/Resume'
 import VisibilityIcon from './components/VisibilityIcon.js'
 
 

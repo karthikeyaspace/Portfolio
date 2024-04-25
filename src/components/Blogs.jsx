@@ -1,9 +1,9 @@
-import './Blogs.css';
-import nothing from '../../assets/nothing.png';
+
+import nothing from '../assets/nothing.png';
 
 export default function Blogs() {
     return (
-        <div className="blogs">
+        <div className="blogs mt-16">
             <div className="container">
                 <h1>
                     I have no Blogs

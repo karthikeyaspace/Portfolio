@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root{
     --primary: white;
@@ -14,35 +16,13 @@
     color: var(--secondary);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-    color: var(--secondary);
-}
-
 .container{
     max-width: 1440px;
-    margin: auto;
-}
-
-#root{
-    align-items: center;
-    overflow-x: hidden;
-    margin-top: 70px;
-
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 body{
-    /* font-family: 'Roboto Mono', monospace; */
     font-family: "Anta",'Roboto Mono', sans-serif;
     background-color: var(--primary);
     color: var(--secondary);
@@ -52,10 +32,6 @@ body{
 
 body::-webkit-scrollbar {
     display: none;
-}
-
-h1, h2, h3, h4, h5, h6{
-    color: var(--secondary);
 }
 
 h1{
@@ -92,4 +68,23 @@ p{
     body{
         align-items: center;
     }
+}
+
+
+/* resume page css */
+.textLayer{
+    display: none;
+}
+
+.annotationLayer{
+    display: none;
+}
+
+.react-pdf__Page__canvas{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 }

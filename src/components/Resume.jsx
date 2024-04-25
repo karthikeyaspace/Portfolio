@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Resume.css";
-import pdf from "../../assets/resume.pdf";
+import pdf from "../assets/resume.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
@@ -26,16 +25,16 @@ function Resume() {
   return (
     <div className="resume">
       <div className="container">
-        <h1>Resume</h1>
-        <div className="resumepdf">
+        <h1 className="py-8 px-0 text-4xl text-center">Resume</h1>
+        <div className="resumepdf text-center">
           <Document file={pdf} className="pdf">
             <Page pageNumber={1} scale={scale} />
           </Document>
         </div>
 
-        <div className="download">
+        <div className="text-center py-8 px-0">
           <a href={pdf} download>
-            <button>Download Resume</button>
+            <button className="px-6 py-3 bg-white text-black italic font-bold border-2 border-black my-4  transition-all duration-300 hover:opacity-80 hover:bg-black hover:text-white ">Download Resume</button>
           </a>
         </div>
       </div>
