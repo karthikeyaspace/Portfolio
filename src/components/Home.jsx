@@ -12,12 +12,12 @@ export default function Home() {
             <div className="topdiv">
                 <div className="container flex flex-row flex-wrap mx-auto justify-between items-center p-4">
                     <div className="left px-4 sm:py-4 sm:px-12">
-                        <h2>Hey,</h2>
-                        <h1 className="py-4">I'm <strong>Karthikeya</strong></h1>
+                        <h2 className="text-3xl mb-4">Hey,</h2>
+                        <h1 className="py-4 text-5xl mb-4">I'm <strong>Karthikeya</strong></h1>
                         <p>Computer Science Student</p>
-                        <p>Frontend Developer</p>
+                        <p>Fullstack Developer</p>
                         <p>ML enthusiast</p>
-                        <h3 className="mt-4 font-bold">And Welcome to my Portfolio....</h3>
+                        <h3 className="mt-8 text-xl font-bold">And Welcome to my Portfolio....</h3>
 
                     </div>
 
@@ -30,16 +30,12 @@ export default function Home() {
             <div className="homeDown xl:mt-28">
                 <div className="container flex flex-row flex-wrap mx-auto mt-4 justify-between items-center p-4">
                     <div className="left px-4 sm:py-4 sm:px-12 md:w-2/3 lg:w-1/2 gap-4">
-                        <h2 className="font-semibold">Let Me Introduce Myself</h2>
-                        <br />
-                        <p>Hey, I am <strong>Karthikeya</strong>, a Computer Science Student and
-                            Intrested in MERN stack and Machine learning</p>
-                        <br />
-                        <p>Constantly seeking fresh opportunities to learn and expand my skills.</p>
-                        <br />
-                        <p>A quick learner and always looking for new challenges to solve. </p>
-                        <br />
-                        <p>I am a competitive coder and always looking for
+                        <h2 className="font-semibold text-4xl mb-10">Let Me Introduce Myself</h2>
+                        <p className="mb-6">Hey, I am <strong>Karthikeya</strong>, a Computer Science Student and
+                            Intrested in MERN stack development and Machine learning</p>
+                        <p className="mb-4">Constantly seeking fresh opportunities to learn and expand my skills.</p>
+                        <p className="mb-4">A quick learner and always looking for new challenges to solve. </p>
+                        <p className="mb-4">I am a competitive coder and always looking for
                             new projects to work on.</p>
                     </div>
 

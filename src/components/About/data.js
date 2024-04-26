@@ -57,7 +57,7 @@ const data = {
         },
         {
             "name":"vercel",
-            "img":vercel 
+            "img": vercel
         }
 
     ]

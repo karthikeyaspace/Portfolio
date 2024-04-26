@@ -24,9 +24,11 @@ export default function Projects() {
                                         ))
                                     }
                                 </div>
-                                <a href={project.github} target="_blank" rel="noreferrer">
-                                    <button className='bg-slate-800 px-4 py-1 mx-32 my-4 rounded-md text-sm text-white text-center hover:bg-slate-200 transition-all  hover:text-black '>GitHub</button>
-                                </a>
+                                <div className="w-full flex flex-row justify-center mb-4">
+                                    <a href={project.github} target="_blank" rel="noreferrer" >
+                                        <button className='bg-slate-800 px-4 py-1 rounded-md text-sm text-white text-center hover:bg-slate-200 transition-all  hover:text-black '>GitHub</button>
+                                    </a>
+                                </div>
                             </div>
                         ))
                     }
