@@ -7,7 +7,6 @@ import Home from './components/Home'
 import About from './components/About/About'
 import NotFound from './components/NotFound'
 import Projects from './components/Projects/Projects'
-import Blogs from './components/Blogs'
 import Resume from './components/Resume'
 import VisibilityIcon from './components/VisibilityIcon.js'
 
@@ -29,10 +28,6 @@ function App() {
       {
         path: 'projects',
         element: <Projects />
-      },
-      {
-        path: 'blogs',
-        element: <Blogs />
       },
       {
         path: 'resume',
