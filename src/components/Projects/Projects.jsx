@@ -3,19 +3,19 @@ import data from './data.js'
 
 export default function Projects() {
     return (
-        <div className="projects mt-16 flex ">
+        <div className="projects mt-16 flex bg-primary/90 text-secondary min-h-screen">
             <div className="container px-16 ob-12">
                 <h1 className='py-8 text-3xl text-center'>
                     My Projects
                 </h1>
-                <div className="flex flex-row flex-wrap justify-center items-center gap-4 w-full">
+                <div className="flex flex-row flex-wrap justify-center gap-4 w-full">
                     {
                         data.projects.map((project, index) => (
-                            <div className="max-w-96 mb-12 rounded overflow-hidden shadow-xl" key={index}>
+                            <div className="max-w-96 mb-12 rounded overflow-hidden shadow-lg shadow-secondary/30 bg-secondary/5" key={index}>
                                 <img src={project.image} className='w-full hidden sm:block' alt={project.name} />
                                 <div className='px-6 py-4'>
                                     <h3 className='font-bold text-xl mb-2'>{project.name}</h3>
-                                    <p className='text-gray-700 text-base'>{project.description}</p>
+                                    <p className='text-base'>{project.description}</p>
                                 </div>
                                 <div className="px-6 pt-4 pb-2  ">
                                     {

@@ -23,20 +23,18 @@ function Resume() {
   }, []);
 
   return (
-    <div className="resume">
-      <div className="container">
-        <h1 className="py-8 px-0 text-4xl text-center">Resume</h1>
-        <div className="resumepdf text-center">
-          <Document file={pdf} className="pdf">
-            <Page pageNumber={1} scale={scale} />
-          </Document>
-        </div>
+    <div className="resume mt-16 bg-primary/90">
+      <h1 className="py-8 px-0 text-4xl text-center">Resume</h1>
+      <div className="resumepdf text-center flex justify-center">
+        <Document file={pdf} className="pdf"  >
+          <Page pageNumber={1} scale={scale}  />
+        </Document>
+      </div>
 
-        <div className="text-center py-8 px-0">
-          <a href={pdf} download>
-            <button className="px-6 py-3 bg-white text-black italic font-bold border-2 border-black my-4  transition-all duration-300 hover:opacity-80 hover:bg-black hover:text-white ">Download Resume</button>
-          </a>
-        </div>
+      <div className="text-center py-8 px-0">
+        <a href={pdf} download>
+          <button className="px-6 py-3 bg-primary text-secondary italic font-bold border-2 border-secondary my-4  transition-all hover:bg-secondary hover:text-primary ">Download Resume</button>
+        </a>
       </div>
     </div>
   );

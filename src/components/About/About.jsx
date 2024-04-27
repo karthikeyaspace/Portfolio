@@ -6,7 +6,7 @@ import GitHubCalendar from "react-github-calendar"
 
 export default function About() {
     return (
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 bg-primary/90 text-secondary">
             <div className="about mt-16">
                 <div className="container grid grid-cols-1 md:grid-cols-2 m-auto justify-center items-center">
                     <div className="left">
@@ -32,7 +32,7 @@ export default function About() {
                         <div className="flex flex-row flex-wrap m-auto justify-center itmes-center">
                             {
                                 data.languages.map((item, index) => (
-                                    <div key={index} className="m-2 sm:m-4 py-3 px-8 sm:px-16 text-center bg-gray-100 shadow-inner hover:scale-95 transition-all ">
+                                    <div key={index} className="m-2 sm:m-4 py-3 px-8 sm:px-16 text-center bg-secondary/10 shadow-inner hover:scale-95 transition-all ">
                                         <img src={item.img} className="w-14 sm:w-16" alt={item.name} />
                                     </div>
                                 ))
@@ -47,7 +47,7 @@ export default function About() {
                         <div className="flex flex-row  flex-wrap m-auto justify-center itmes-center">
                             {
                                 data.technologies.map((item, index) => (
-                                    <div key={index} className="m-2 sm:m-4 py-3 px-8 sm:px-16 text-center bg-gray-100 shadow-inner hover:scale-95 transition-all ">
+                                    <div key={index} className="m-2 sm:m-4 py-3 px-8 sm:px-16 text-center bg-secondary/10 shadow-inner hover:scale-95 transition-all ">
                                         <img src={item.img} className="w-14 sm:w-16" alt={item.name} />
                                     </div>
                                 ))

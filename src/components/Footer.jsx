@@ -6,7 +6,7 @@ import email from '../assets/email-logo.svg';
 
 export default function Footer() {
     return (
-        <div className="border-t-2 border-black border-opacity-80 text-center">
+        <div className="border-t-2 border-secondary bg-primary text-secondary border-opacity-80 text-center">
             <div className="container flex flex-row flex-wrap items-center justify-evenly m-0 static bottom-0 px-12 py-8">
                 <div>
                     <h4>Developed by <a href="https://github.com/karthikeyaspace/portfolio">Karthikeya.V</a></h4>
