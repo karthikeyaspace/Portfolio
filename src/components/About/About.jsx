@@ -6,10 +6,10 @@ import GitHubCalendar from "react-github-calendar"
 
 export default function About() {
     return (
-        <div className="flex flex-col gap-8 bg-primary/90 text-secondary">
+        <div className="flex flex-col gap-8 bg-primary/90 text-secondary transition-all duration-300">
             <div className="about mt-16">
                 <div className="container grid grid-cols-1 md:grid-cols-2 m-auto justify-center items-center">
-                    <div className="left">
+                    <div className="left mt-4 sm:mt-0">
                         <h1 className="text-5xl mt-4 mb-8">About Me</h1>
                         <p className="text-base sm:text-xl mb-2">I am <span className="text-2xl font-extrabold">Karthikeya</span> from Hyderabad, Telangana</p>
                         <p className="text-base sm:text-xl mb-2">currently studying 2nd year B-tech in Computer Science and Data Science at <i>VNR Vignan Jyothi College of Engineering.</i> <a href="https://vnrvjiet.ac.in" target="_blank"><img src={open} alt="" style={{ maxWidth: '15px' }} /></a> </p>

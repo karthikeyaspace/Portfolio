@@ -8,10 +8,10 @@ import profilePic from '../assets/homeimg.png'
 
 export default function Home() {
     return (
-        <div className="home mt-16 flex flex-col gap-8 bg-primary/90">
+        <div className="home mt-16 flex flex-col gap-8 bg-primary/90 transition-all duration-300">
             <div className="topdiv">
                 <div className="container flex flex-row flex-wrap mx-auto justify-between items-center p-4">
-                    <div className="left px-4 sm:py-4 sm:px-12 text-secondary">
+                    <div className="left px-0 mt-8 sm:py-4 sm:px-12 text-secondary">
                         <h2 className="text-3xl mb-4">Hey,</h2>
                         <h1 className="py-4 text-5xl mb-4">I'm <strong>Karthikeya</strong></h1>
                         <p>Computer Science Student</p>
@@ -21,15 +21,15 @@ export default function Home() {
 
                     </div>
 
-                    <div className="right mx-auto w-2/3 lg:mx-0 sm:w-5/12  ">
+                    <div className="right mx-auto w-full lg:mx-0 sm:w-5/12  ">
                         <img src={right} alt="" />
-                    </div>
+                    </div>  
                 </div>
             </div>
 
             <div className="homeDown xl:mt-28">
                 <div className="container flex flex-row flex-wrap mx-auto mt-4 justify-between items-center p-4">
-                    <div className="left px-4 sm:py-4 sm:px-12 md:w-2/3 lg:w-1/2 gap-4 text-secondary">
+                    <div className="left  sm:py-4 sm:px-12 md:w-2/3 lg:w-1/2 gap-4 text-secondary">
                         <h2 className="font-semibold text-4xl mb-10">Let Me Introduce Myself</h2>
                         <p className="mb-6">Hey, I am <strong>Karthikeya</strong>, a Computer Science Student and
                             Intrested in MERN stack development and Machine learning</p>
@@ -39,7 +39,7 @@ export default function Home() {
                             new projects to work on.</p>
                     </div>
 
-                    <div className="right mx-auto my-8 w-2/3 sm:w-1/2 md:w-1/3">
+                    <div className="right mx-auto my-8 w-full sm:w-1/2 md:w-1/3">
                         <img src={profilePic} alt="" />
                     </div>
 
@@ -47,7 +47,7 @@ export default function Home() {
             </div>
 
             <div className="contactt flex flex-col items-center justify-center mt-8 sm:mt-20 mb-8">
-                <h3 className="text-3xl font-bold">
+                <h3 className="text-3xl font-bold text-secondary">
                     Find me at
                 </h3>
                 <ul className="flex flex-row p-8">
