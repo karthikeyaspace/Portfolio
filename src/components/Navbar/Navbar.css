@@ -2,7 +2,6 @@
 .nav-menu{
     display: flex;
     width: 30%;
-    justify-content: space-around;
 }
 
 .bars{
@@ -24,7 +23,7 @@
     opacity: 0.6;
 }
 
-@media screen and (max-width:1040px){
+@media screen and (max-width:1024px){
     .bars{
         display: flex;
         width: 35px;
