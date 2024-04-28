@@ -58,20 +58,21 @@ export default function Navbar(props) {
 
                     <div className="dropdowndiv">
 
-                        <li className="nav-item font-extrabold cursor-pointer  transition-all duration-300 hover:opacity-60" onClick={() => {setDropdown(!dropdown); setMoreThemes(false)}}>
+                        <li className="nav-item font-extrabold cursor-pointer hover:opacity-60" onClick={() => {setDropdown(!dropdown); setMoreThemes(false)}}>
                             Themes
                         </li>
-                        {dropdown && <div className="dropdown relative w-24 right-24 bottom-20 lg:absolute lg:top-16 lg:right-2 ">
+                        {dropdown && <div className="dropdown relative w-24 right-24 bottom-20 lg:absolute lg:top-12 lg:right-0 ">
                             <div className="bg-primary  border-2 border-secondary p-2">
                                 <p onClick={() => props.setTheme('light')} className="cursor-pointer hover:opacity-60">Light</p>
                                 <p onClick={() => props.setTheme('dark')} className="cursor-pointer hover:opacity-60">Dark</p>
                                 <p onClick={handleSystemTheme} className="cursor-pointer hover:opacity-60">System</p>
                                 <p onClick={() => setMoreThemes(!MoreThemes)} className="hover:opacity-60">{MoreThemes ? <p> Less.. </p> : <p> More..</p>}</p>
                                 {MoreThemes && <div className="morethemes">
-                                    <p onClick={() => props.setTheme('red')}>Red</p>
-                                    <p onClick={() => props.setTheme('green')}>Green</p>
-                                    <p onClick={() => props.setTheme('blue')}>Blue</p>
-                                    <p onClick={() => props.setTheme('pink')}>Pink</p>
+                                    <p onClick={() => props.setTheme('red')} className="hover:opacity-60">Red</p>
+                                    <p onClick={() => props.setTheme('green')} className="hover:opacity-60">Green</p>
+                                    <p onClick={() => props.setTheme('blue')} className="hover:opacity-60">Blue</p>
+                                    <p onClick={() => props.setTheme('pink')} className="hover:opacity-60">Pink</p>
+                                    <p onClick={() => props.setTheme('grass')} className="hover:opacity-60">Grass</p>
                                 </div>}
                             </div>
                         </div>}

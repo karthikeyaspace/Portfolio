@@ -1,7 +1,8 @@
  
 .nav-menu{
     display: flex;
-    width: 30%;
+    position: absolute;
+    right: 0;
 }
 
 .bars{
@@ -37,7 +38,7 @@
         justify-content: start;
         top: 4rem;
         right: -100%;
-        width: 40%;
+        width: 25%;
         height: 100vh;
         background: rgb(var(--primary));
         transition: all 0.5s;
@@ -59,4 +60,11 @@
         right: 0;
     }
     
+}
+
+@media screen and (max-width: 550px){
+    .nav-menu{
+        width: 40%;
+        align-items: flex-start;
+    }
 }
