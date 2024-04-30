@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { Link } from 'react-router-dom'
 import './Navbar.css'
-import logo from '../../assets/logo.svg'
+import LogoB from '../../assets/logo.svg'
+import LogoW from '../../assets/logo-white.svg'
 import Bars from '../../assets/bars.png'
 
 export default function Navbar(props) {
@@ -9,6 +10,8 @@ export default function Navbar(props) {
     const [menu, setMenu] = useState(false)
     const [dropdown, setDropdown] = useState(false)
     const [MoreThemes, setMoreThemes] = useState(false)
+    const [logo, setLogo] = useState(LogoW)
+
     const handleClick = () => {
         setMenu(!menu)
         setDropdown(false)
@@ -23,6 +26,13 @@ export default function Navbar(props) {
             props.setTheme('light')
         }
     }
+
+    const theme = props.theme
+    useEffect(()=>{
+        console.log(theme)
+        if(theme === 'light') setLogo(LogoB)
+        else setLogo(LogoW)
+    }, [theme])
 
 
     return (

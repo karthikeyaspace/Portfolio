@@ -3,7 +3,7 @@ import right from "../assets/right.png"
 import github from '../assets/github-logo.svg';
 import linkedin from '../assets/linkedin-logo.svg';
 import twitter from '../assets/twitter-logo.svg';
-import profilePic from '../assets/homeimg.png'
+import profilePic from '../assets/newhomeimg.png'
 
 
 export default function Home() {
