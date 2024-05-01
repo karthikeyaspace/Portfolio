@@ -18,14 +18,14 @@ export default function Navbar(props) {
         setMoreThemes(false)
     }
 
-    function handleSystemTheme() {
-        const getCurrentTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
-        if (getCurrentTheme) {
-            props.setTheme('dark')
-        } else {
-            props.setTheme('light')
-        }
-    }
+    // function handleSystemTheme() {
+    //     const getCurrentTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
+    //     if (getCurrentTheme) {
+    //         props.setTheme('dark')
+    //     } else {
+    //         props.setTheme('light')
+    //     }
+    // }
 
     const theme = props.theme
     useEffect(()=>{
@@ -60,11 +60,6 @@ export default function Navbar(props) {
                             Resume
                         </li>
                     </Link>
-                    {/* <div className="themes flex flex-row">
-                        <button onClick={() => props.setTheme('light')} className="theme-button">Light</button>
-                        <button onClick={() => props.setTheme('dark')} className="theme-button">Dark</button>
-                        <button onClick={handleSystemTheme} className="theme-button">System</button>
-                    </div> */}
 
                     <div className="dropdowndiv">
 
@@ -74,15 +69,13 @@ export default function Navbar(props) {
                         {dropdown && <div className="dropdown relative w-24 right-24 bottom-20 lg:absolute lg:top-12 lg:right-0 ">
                             <div className="bg-primary  border-2 border-secondary p-2">
                                 <p onClick={() => props.setTheme('light')} className="cursor-pointer hover:opacity-60">Light</p>
-                                <p onClick={() => props.setTheme('dark')} className="cursor-pointer hover:opacity-60">Dark</p>
-                                <p onClick={handleSystemTheme} className="cursor-pointer hover:opacity-60">System</p>
+                                <p onClick={() => props.setTheme('red')} className="cursor-pointer hover:opacity-60 text-red-800">Red</p>
+                                <p onClick={() => props.setTheme('green')} className="cursor-pointer hover:opacity-60 text-green-800">Green</p>
                                 <p onClick={() => setMoreThemes(!MoreThemes)} className="hover:opacity-60">{MoreThemes ? <p> Less.. </p> : <p> More..</p>}</p>
                                 {MoreThemes && <div className="morethemes">
-                                    <p onClick={() => props.setTheme('red')} className="hover:opacity-60">Red</p>
-                                    <p onClick={() => props.setTheme('green')} className="hover:opacity-60">Green</p>
-                                    <p onClick={() => props.setTheme('blue')} className="hover:opacity-60">Blue</p>
-                                    <p onClick={() => props.setTheme('pink')} className="hover:opacity-60">Pink</p>
-                                    <p onClick={() => props.setTheme('grass')} className="hover:opacity-60">Grass</p>
+                                    <p onClick={() => props.setTheme('blue')} className="cursor-pointer hover:opacity-60 text-blue-800">Blue</p>
+                                    <p onClick={() => props.setTheme('pink')} className="cursor-pointer hover:opacity-60 text-pink-500">Pink</p>
+                                    <p onClick={() => props.setTheme('grass')} className="cursor-pointer hover:opacity-60 text-green-600">Grass</p>
                                 </div>}
                             </div>
                         </div>}
