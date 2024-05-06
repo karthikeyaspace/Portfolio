@@ -29,7 +29,6 @@ export default function Navbar(props) {
 
     const theme = props.theme
     useEffect(()=>{
-        console.log(theme)
         if(theme === 'light') setLogo(LogoB)
         else setLogo(LogoW)
     }, [theme])
