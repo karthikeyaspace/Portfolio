@@ -64,7 +64,7 @@ body::-webkit-scrollbar {
 }
 
 .react-pdf__Page__canvas{
-    display: block;
+    margin: auto;
     border: 1px solid rgb(var(--secondary));
     box-shadow: 0 0 30px 0 rgba(var(--secondary), 0.6);
 }

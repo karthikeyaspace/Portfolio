@@ -22,6 +22,9 @@ export default function Root() {
                 <Outlet />
             </div>
             <Footer />
+            <div className='w-screen  fixed bottom-0 bg-red-600 text-center'>
+                <p className=''>This portfolio is not maintained, for more updated info about me visit - <a className='text-blue-900' href="https://kv3.vercel.app">portfolio</a></p>
+            </div>
             
         </div>
     );
